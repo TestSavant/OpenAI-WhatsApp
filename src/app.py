@@ -12,7 +12,7 @@ def home():
         {
             'status': 'OK',
             'wehook_url': 'BASEURL/twilio/receiveMessage',
-            'message': 'The webhook is ready. You need to connect WhatsApp',
+            'message': 'Zenko AI webhook is ready. Next connect WhatsApp and Twilio',
             
         }
     )
