@@ -12,8 +12,8 @@ def home():
         {
             'status': 'OK',
             'wehook_url': 'BASEURL/twilio/receiveMessage',
-            'message': 'The webhook is ready.',
-            'video_url': 'https://youtu.be/y9NRLnPXsb0'
+            'message': 'The webhook is ready. You need to connect WhatsApp',
+            
         }
     )
 
