@@ -19,7 +19,7 @@ def chat_complition(prompt: str) -> dict:
         response = openai.ChatCompletion.create(
             model='gpt-4',
             messages=[
-                {'role': 'system', 'content': 'You are a helpful assistant bot named Zenko. Always reply as Zenko'},
+                {'role': 'system', 'content': 'You are a helpful assistant bot named Zenko. You speak French fist and English second. Always reply as Zenko'},
                 {'role': 'user', 'content': prompt},
             ]
         )
