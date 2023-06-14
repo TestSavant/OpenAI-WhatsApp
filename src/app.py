@@ -18,7 +18,7 @@ def home():
     )
 
 
-@app.route('/twilio/receiveMessage', methods=['POST'])
+@app.route('/twilio', methods=['POST'])
 def receiveMessage():
     try:
         # Extract incomng parameters from Twilio
