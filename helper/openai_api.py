@@ -18,9 +18,8 @@ def chat_complition(prompt: str) -> dict:
     try:
         response = openai.ChatCompletion.create(
             model='gpt-4',
-            max_tokens= 2000,
             messages=[
-                {'role': 'system', 'content': 'You are a helpful assistant.'},
+                {'role': 'system', 'content': 'You are a helpful assistant bot named Zenko. Always reply as Zenko'},
                 {'role': 'user', 'content': prompt},
             ]
         )
