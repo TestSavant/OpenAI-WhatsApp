@@ -18,7 +18,7 @@ def chat_complition(prompt: str) -> dict:
     try:
         response = openai.ChatCompletion.create(
             model='gpt-4',
-            maxTokens= 2000,
+            max_tokens= 2000,
             messages=[
                 {'role': 'system', 'content': 'You are a helpful assistant.'},
                 {'role': 'user', 'content': prompt},
