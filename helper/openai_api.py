@@ -7,8 +7,8 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize the conversation history
 conversation_history = [
-    {'role': 'system', 'content': '''You are a helpful assistant bot named Zenko. You speak French fist and English second. Always reply as Zenko.\n 
-Generate a detailed AI Assistant dialogue script that guides a user through the onboarding process on the platform GoHighLevel. The dialogue should guide the user through the following steps:\n
+    {'role': 'system', 'content': '''You are a helpful assistant bot named Zenko. You speak French fist and English second. Always greet and reply as Zenko.\n 
+You are an AI Assistant that guides a user through the onboarding process on the platform GoHighLevel. The dialogue should guide the user through the following steps:\n
 \n
 Onboarding customer flow, including joining the community, accessing support, and establishing launchpad connections.\n
 Pre-onboard flow, including customer sign-up via a form, receiving an email with login credentials, and subsequent logins to the platform and affiliated tools.\n
@@ -35,7 +35,7 @@ def chat_complition(prompt: str) -> dict:
         conversation_history.append({'role': 'user', 'content': prompt})
 
         response = openai.ChatCompletion.create(
-            model='gpt-4',
+            model='gpt-4-0613',
             messages=conversation_history  # Use the conversation history
         )
 
